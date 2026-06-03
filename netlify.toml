@@ -1,3 +1,0 @@
-[build]
-publish = "client/dist"
-command = "cd client && npm install && npm run build"
