@@ -1,4 +1,8 @@
 [build]
-  base = "/"
   publish = "client/dist"
   command = "cd client && npm install && npm run build"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://dental-veneer.onrender.com/api/:splat"
+  status = 200
