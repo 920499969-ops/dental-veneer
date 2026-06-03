@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: dental-veneer-api
+    env: node
+    buildCommand: cd server && npm install
+    startCommand: cd server && node index.js

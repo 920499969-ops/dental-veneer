@@ -1,0 +1,16 @@
+{
+  "name": "dental-veneer-studio",
+  "version": "1.0.0",
+  "description": "臻白瓷贴片工作室网站",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm run dev",
+    "server": "cd server && node index.js",
+    "build": "cd client && npm run build",
+    "start": "cd server && NODE_ENV=production node index.js",
+    "start:dev": "cd server && node index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

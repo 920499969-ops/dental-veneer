@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FFFBF5;
+  --color-warm-pink: #F5EDE4;
+  --color-gold: #C9A96E;
+  --color-gold-light: #DBC894;
+  --color-gold-dark: #A88B4E;
+  --color-brown: #2D2418;
+  --color-brown-light: #5C4A3A;
+  --color-sage: #B7C4B0;
+  --color-sage-light: #D4DFCE;
+  --color-rose: #E8D5D0;
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', serif;
+  --font-sans: 'Noto Sans SC', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-brown);
+  position: relative;
+}
+
+#root {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+#root > * {
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Lock all sections to viewport */
+section, main, nav, footer, header, div {
+  max-width: 100vw;
+}
+
+::selection {
+  background: rgba(201, 169, 110, 0.3);
+  color: var(--color-brown);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 3px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
